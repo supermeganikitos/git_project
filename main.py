@@ -11,7 +11,6 @@ class Suprematism(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('UI.ui', self)
-        self.figure = 1
         self.xpos = randint(200, 400)
         self.ypos = randint(200, 400)
         self.siz = 20
@@ -21,7 +20,6 @@ class Suprematism(QMainWindow):
         self.sircle_btn.clicked.connect(self.dr)
 
     def dr(self):
-        self.figure = 1
         self.siz = randint(20, 101)
         self.xpos = randint(200, 400)
         self.ypos = randint(200, 400)
